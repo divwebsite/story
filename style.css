@@ -1,0 +1,120 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+     html, body {
+	 font-family: 'Roboto Mono', monospace;
+	 background: #1d1d1d;
+     overflow: hidden;
+}
+
+
+/*Sosial Icons*/
+
+.sm a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 37px;
+    width: 70px;
+    height: 70px;
+    color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .sm a::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    z-index: -1;
+    transition: transform .3s ease-in;
+  }
+  .sm a:nth-child(1)::before{
+    background: #0044ff;
+  }
+  .sm a:nth-child(2)::before{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+    #dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }
+  .sm a:nth-child(3)::before{
+    background: #1c96e9;
+  }
+  .sm a:nth-child(4)::before{
+    background: #f70000;
+  }
+  .sm a:nth-child(5)::before{
+    background: #046596;
+  }
+  .sm a:hover::before{
+    transform: scale(0);
+  }
+  .sm a i{
+    transition: transform .3s ease-in;
+  }
+  .sm a:nth-child(1):hover i{
+    background: #38529a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(2):hover i{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+    #dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(3):hover i{
+    background: #ff0000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(4):hover i{
+    background: #f70000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+
+
+
+/*Title*/
+h1{
+    color: aliceblue;
+    font-weight: 900;
+    text-decoration: underline 2px solid white;
+}
+ 
+
+/*Day Counter*/
+
+p{
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+
+
+
+
+
+/*Story*/
+.container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #e2e2e2;
+    margin-bottom: 300px;
+    padding: 20px;
+}
+.dud {
+    color: #757575;
+}
+
+
+
